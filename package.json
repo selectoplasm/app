@@ -1,26 +1,19 @@
 {
    "name": "selectoplasm",
-   "version": "0.0.1-alpha.1",
+   "version": "0.0.1-alpha.2",
    "type": "module",
    "description": "A CSS design experience made for developers.",
    "main": "dist/selectoplasm.js",
    "files": [
      "dist"
    ],
-   "dependencies": {
-     "@selectoplasm/asi": "^0.0.7",
-     "@selectoplasm/asi-communication": "^0.1.2",
-     "@selectoplasm/component-builder": "^0.0.1",
-     "@selectoplasm/ui": "^0.0.3",
-     "@selectoplasm/utils": "^0.0.3"
-   },
    "repository": {
      "type": "git",
-     "url": "git+https://github.com/selectoplasm/selectoplasm.git"
+     "url": "git+https://github.com/selectoplasm/app.git"
    },
-   "homepage": "https://github.com/selectoplasm/selectoplasm#readme",
+   "homepage": "https://github.com/selectoplasm/app#readme",
    "bugs": {
-     "url": "https://github.com/selectoplasm/selectoplasm/issues"
+     "url": "https://github.com/selectoplasm/app/issues"
    },
    "keywords": [
      "selectoplasm"

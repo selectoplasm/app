@@ -1,0 +1,34 @@
+{
+   "name": "selectoplasm",
+   "version": "0.0.1-alpha.1",
+   "type": "module",
+   "description": "A CSS design experience made for developers.",
+   "main": "dist/selectoplasm.js",
+   "files": [
+     "dist"
+   ],
+   "dependencies": {
+     "@selectoplasm/asi": "^0.0.7",
+     "@selectoplasm/asi-communication": "^0.1.2",
+     "@selectoplasm/component-builder": "^0.0.1",
+     "@selectoplasm/ui": "^0.0.3",
+     "@selectoplasm/utils": "^0.0.3"
+   },
+   "repository": {
+     "type": "git",
+     "url": "git+https://github.com/selectoplasm/selectoplasm.git"
+   },
+   "homepage": "https://github.com/selectoplasm/selectoplasm#readme",
+   "bugs": {
+     "url": "https://github.com/selectoplasm/selectoplasm/issues"
+   },
+   "keywords": [
+     "selectoplasm"
+   ],
+   "author": "Jim Bridger",
+   "license": "PROPRIETARY",
+   "publishConfig": {
+     "registry": "https://registry.npmjs.org/",
+     "access": "public"
+   }
+ }

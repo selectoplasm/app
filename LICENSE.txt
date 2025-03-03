@@ -1,0 +1,16 @@
+License
+
+© 2025 Jim Bridger. All rights reserved.
+
+This software is provided with restricted rights and no formal open source license. The following terms apply:
+
+### Permitted
+- You may use the compiled application as a development dependency in your personal or commercial projects
+- The code and files you create using this tool belong to you
+
+### Prohibited
+- You may not include this software as a production dependency
+- You may not redistribute, copy, or share the source code
+- You may not modify the source code or create derivative works
+- You may not reverse engineer the compiled application
+- You may not sublicense, sell, or distribute the software in either source or compiled form

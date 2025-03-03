@@ -1,6 +1,6 @@
 {
    "name": "selectoplasm",
-   "version": "0.0.1-alpha.3",
+   "version": "0.0.1-alpha.4",
    "type": "module",
    "description": "A CSS design experience made for developers.",
    "main": "dist/selectoplasm.js",

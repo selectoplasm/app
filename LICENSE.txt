@@ -4,11 +4,11 @@ License
 
 This software is provided with restricted rights and no formal open source license. The following terms apply:
 
-### Permitted
+Permitted
 - You may use the compiled application as a development dependency in your personal or commercial projects
 - The code and files you create using this tool belong to you
 
-### Prohibited
+Prohibited
 - You may not include this software as a production dependency
 - You may not redistribute, copy, or share the source code
 - You may not modify the source code or create derivative works

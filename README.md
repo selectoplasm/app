@@ -42,10 +42,10 @@ First, run your app using `npm run dev` or equivalent. Once your page loads, you
 
 You can use the following key bindings:
 
-`e`: will activate the Elements Context Menu. This lets you quickly target an element and create a component (a CSS ruleset) for that element.
-`c`: Toggles the Component Library window on and off.
-`s`: Toggles the Stylesheet Library window on and off.
-`p`: Toggles the Plugin Manager window on and off.
+- `e`: will activate the Elements Context Menu. This lets you quickly target an element and create a component (a CSS ruleset) for that element.
+- `c`: Toggles the Component Library window on and off.
+- `s`: Toggles the Stylesheet Library window on and off.
+- `p`: Toggles the Plugin Manager window on and off.
 
 ### How Selectoplasm Works
 

@@ -3,6 +3,7 @@
 Selectoplasm is a CSS design experience made for developers. It runs as a dev dependency in your project and allows you to style your app in runtime, in the browser. It provides the following features:
 
 - realtime, instant feedback - quickly observe and iterate through changes before committing them to your stylesheet
+- emmett-inspired syntax to quickly set up and style components
 - use your preferred set of utility classes during the design process, but ship without them.
 - keep your CSS entirely separate from your application's html and javascript
 - create reusable components with default settings that can be customised in any app you drop them in
@@ -32,6 +33,25 @@ export default defineConfig({
 ```
 
 That's it! Selectoplasm should now attach itself to your project's DOM in dev mode, providing a complete css design experience for your app.
+
+## User Guide
+
+### Quickstart
+
+First, run your app using `npm run dev` or equivalent. Once your page loads, you can press the `backtick/tilde` key to make selectoplasm visible. You should see a row of buttons appear.
+
+You can use the following key bindings:
+
+`e`: will activate the Elements Context Menu. This lets you quickly target an element and create a component (a CSS ruleset) for that element.
+`c`: Toggles the Component Library window on and off.
+`s`: Toggles the Stylesheet Library window on and off.
+`p`: Toggles the Plugin Manager window on and off.
+
+### How Selectoplasm Works
+
+Very basically, selectoplasm uses plugins to generate stylesheets, which you then interact with using the Component Builder.
+
+The Component Builder has an input called the Combo Input, which allows you to type an emmet-inspired syntax to quickly add declarations and rulesets to your component.
 
 ## License
 

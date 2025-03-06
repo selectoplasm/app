@@ -1,27 +1,42 @@
 {
    "name": "selectoplasm",
-   "version": "0.0.1-alpha.4",
+   "version": "0.0.1-alpha.5",
    "type": "module",
    "description": "A CSS design experience made for developers.",
    "main": "dist/selectoplasm.js",
+   "exports": {
+      ".": {
+         "types": "./dist/selectoplasm.d.ts",
+         "default": "./dist/selectoplasm.js"
+      },
+      "./vite": {
+         "types": "./dist/vite/plugins/index.d.ts",
+         "default": "./dist/vite/plugins/index.js"
+      },
+      "./vite/*": {
+         "types": "./dist/vite/plugins/*.d.ts",
+         "default": "./dist/vite/plugins/*.js"
+      }
+   },
+   "types": "./dist/selectoplasm.d.ts",
    "files": [
-     "dist"
+      "dist"
    ],
    "repository": {
-     "type": "git",
-     "url": "git+https://github.com/selectoplasm/app.git"
+      "type": "git",
+      "url": "git+https://github.com/selectoplasm/app.git"
    },
    "homepage": "https://github.com/selectoplasm/app#readme",
    "bugs": {
-     "url": "https://github.com/selectoplasm/app/issues"
+      "url": "https://github.com/selectoplasm/app/issues"
    },
    "keywords": [
-     "selectoplasm"
+      "selectoplasm"
    ],
    "author": "Jim Bridger",
    "license": "PROPRIETARY",
    "publishConfig": {
-     "registry": "https://registry.npmjs.org/",
-     "access": "public"
+      "registry": "https://registry.npmjs.org/",
+      "access": "public"
    }
- }
+}

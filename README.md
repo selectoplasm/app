@@ -1,3 +1,11 @@
+IMPORTANT: This is currently alpha software. As of March 28th, 2025, it's very close to being ready for a public beta release but there are several known issues. They're all fairly minor though so if you found your way here you can probably play around with the app.
+
+- Safari and Firefox have trouble with the Elements context menu and don't update hover state of elements after an onwheel event.
+- some Component Builder color previews don't load correctly.
+- Some aspects of the architecture, particularly the plugin API, are going to have breaking changes, but they'll be fairly easy to account for when they happen.
+
+I'm expecting to release 1.0.0-beta.1 in the first half of April 2025.
+
 # Selectoplasm
 
 Selectoplasm is a CSS design experience made for developers. It runs as a dev dependency in your project and allows you to style your app in runtime, in the browser. It provides the following features:

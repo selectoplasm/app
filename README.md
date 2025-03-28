@@ -30,13 +30,11 @@ Install **selectoplasm** with `npm install save-dev selectoplasm` or the equival
 Edit your `vite.config.js` with the following:
 
 ```js
-// existing imports
-import { selectoplasm, servePlugins } from 'selectoplasm/vite'
+/* existing imports */
+import { selectoplasm } from 'selectoplasm/vite'
 
 export default defineConfig({
-  /* existing config */
-  plugins: [/* existing plugins */, selectoplasm(), servePlugins()],
-  /* existing config */
+  plugins: [/* existing plugins */, selectoplasm()],
 })
 ```
 
@@ -53,7 +51,7 @@ You can use the following key bindings:
 - `e`: will activate the Elements Context Menu. This lets you quickly target an element and create a component (a CSS ruleset) for that element.
 - `c`: Toggles the Component Library window on and off.
 - `s`: Toggles the Stylesheet Library window on and off.
-- `p`: Toggles the Plugin Manager window on and off.
+- `g`: Toggles the Plugin Manager window on and off.
 
 ### How Selectoplasm Works
 

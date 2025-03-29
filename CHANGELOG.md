@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.1-alpha.7] - 2025-03-29
+
+- fixed color preview related bug
+- updated ui fonts
+- updated Plugin Manager to use simplified rulesets
+
 ## [0.0.1-alpha.6] - 2025-03-28
 
 - fixed scroll menu hover in Chrome

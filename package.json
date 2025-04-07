@@ -1,6 +1,6 @@
 {
    "name": "selectoplasm",
-   "version": "0.0.1-alpha.7",
+   "version": "0.0.1-alpha.8",
    "type": "module",
    "description": "A CSS design experience made for developers.",
    "main": "dist/selectoplasm.js",
@@ -16,6 +16,12 @@
       "./vite/*": {
          "types": "./dist/vite/plugins/*.d.ts",
          "default": "./dist/vite/plugins/*.js"
+      },
+      "./bun": {
+         "default": "./dist/bun/selectoplasm.ts"
+      },
+      "./bun/*": {
+         "default": "./dist/bun/*.ts"
       }
    },
    "types": "./dist/selectoplasm.d.ts",

@@ -13,6 +13,7 @@ const PLUGIN_FILES = {
    previewCss: "preview.css",
    patternsHtml: "patterns.html",
    patternsCss: "patterns.css",
+   staticCss: "static.css",
    utilityCss: "utility.css",
 };
 
@@ -22,28 +23,6 @@ export default function pluginServeVite() {
       apply: "serve",
 
       configureServer(server) {
-         // Serve shared scripts
-         server.middlewares.use("/shared-scripts.js", async (req, res) => {
-            try {
-               const sharedScriptsPath = path.join(
-                  process.cwd(),
-                  ".selectoplasm/plugins/sharedScripts.js",
-               );
-               if (await pathExists(sharedScriptsPath)) {
-                  const content = await readFile(sharedScriptsPath, "utf-8");
-                  res.setHeader("Content-Type", "application/javascript");
-                  res.end(content);
-               } else {
-                  res.statusCode = 404;
-                  res.end();
-               }
-            } catch (error) {
-               console.error("Error serving shared scripts:", error);
-               res.statusCode = 500;
-               res.end();
-            }
-         });
-
          // Serve worker files
          server.middlewares.use("/plugin-workers/", async (req, res) => {
             try {
@@ -55,11 +34,7 @@ export default function pluginServeVite() {
                if (await pathExists(workerPath)) {
                   const content = await readFile(workerPath, "utf-8");
                   res.setHeader("Content-Type", "application/javascript");
-                  const modifiedContent = content.replace(
-                     'importScripts("/plugins/sharedScripts.js")',
-                     'importScripts("/shared-scripts.js")',
-                  );
-                  res.end(modifiedContent);
+                  res.end(content);
                } else {
                   res.statusCode = 404;
                   res.end();

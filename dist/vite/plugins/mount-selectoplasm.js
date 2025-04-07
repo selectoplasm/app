@@ -29,7 +29,7 @@ export default function selectoplasm() {
          if (process.env.NODE_ENV === "development") {
             return [
                {
-                  tag: "div",
+                  tag: "selectoplasm-div",
                   attrs: { id: "selectoplasm" },
                   injectTo: "body",
                },

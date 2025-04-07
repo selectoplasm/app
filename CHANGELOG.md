@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.1-alpha.8] - 2025-04-07
+
+- added bun support
+- simplified plugin rulesets
+- changed shadow-root div to selectoplasm-div
+- updated fonts
+- added stylesheet context for declaration components
+- removed sharedScripts
+- added staticCss to plugins
+- moved previewCss to local style tag in plugin previewCss
+
 ## [0.0.1-alpha.7] - 2025-03-29
 
 - fixed color preview related bug

@@ -66,7 +66,28 @@ export async function startSelectoplasmDevServer(entryPointPath: string, userPro
 
       "/": () => new Response(Bun.file(entryPointPath), {
          headers: { "Content-Type": "text/html" },
-      })
+      }),
+
+      "/*": (request: Request) => {
+         const url = new URL(request.url);
+         const filePath = join(userProjectPath, url.pathname);
+         const fileExtension = url.pathname.split('.').pop();
+
+         const mimeTypes: Record<string, string> = {
+            'css': 'text/css',
+            'js': 'application/javascript',
+            'png': 'image/png',
+            'jpg': 'image/jpeg',
+            'jpeg': 'image/jpeg',
+            // add more as needed
+         };
+
+         return new Response(Bun.file(filePath), {
+            headers: {
+               "Content-Type": mimeTypes[fileExtension ?? ''] || 'text/plain'
+            }
+         });
+      },
    };
 
    Bun.serve({

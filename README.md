@@ -1,77 +1,17 @@
-IMPORTANT: This is currently alpha software. As of March 28th, 2025, it's very close to being ready for a public beta release but there are several known issues. They're all fairly minor though so if you found your way here you can probably play around with the app.
+IMPORTANT: This is public alpha software. Expect bugs!
 
-- Safari and Firefox have trouble with the Elements context menu and don't update hover state of elements after an onwheel event.
-- some Component Builder color previews don't load correctly.
-- Some aspects of the architecture, particularly the plugin API, are going to have breaking changes, but they'll be fairly easy to account for when they happen.
+Please refer to the [docs](https://www.selectoplasm.com/docs) for info on how to get started.
 
-I'm expecting to release 1.0.0-beta.1 in the first half of April 2025.
+---
 
-# Selectoplasm
+Selectoplasm currently works with Bun, and with Vite if the projects were created with `npm create vite`. It might work on other vite-based projects too, but it might not. Astro for instance has an issue and I haven't made a proper integration yet.
 
-Selectoplasm is a CSS design experience made for developers. It runs as a dev dependency in your project and allows you to style your app in runtime, in the browser. It provides the following features:
+There's a manual setup page in the docs, it's mostly just setting up endpoints for the app to use.
 
-- realtime, instant feedback - quickly observe and iterate through changes before committing them to your stylesheet
-- emmett-inspired syntax to quickly set up and style components
-- use your preferred set of utility classes during the design process, but ship without them.
-- keep your CSS entirely separate from your application's html and javascript
-- create reusable components with default settings that can be customised in any app you drop them in
-- BYO design system or generate one dynamically with a powerful plugin system
-- create your own **zero-build** plugins using plain html, css and javascript
-- an unbelievably simple developer experience from beginning to end
+Hit me up on Discord or post on reddit if you have questions, happy to help!
 
-## Installation
+## Links
 
-***NOTE**: selectoplasm is currently only available for Vite-based projects.*
-
-### Vite-based projects
-
-Install **selectoplasm** with `npm install save-dev selectoplasm` or the equivalent command for your package manager.
-
-Edit your `vite.config.js` with the following:
-
-```js
-/* existing imports */
-import { selectoplasm } from 'selectoplasm/vite'
-
-export default defineConfig({
-  plugins: [/* existing plugins */, selectoplasm()],
-})
-```
-
-That's it! Selectoplasm should now attach itself to your project's DOM in dev mode, providing a complete css design experience for your app.
-
-## User Guide
-
-### Quickstart
-
-First, run your app using `npm run dev` or equivalent. Once your page loads, you can press the `backtick/tilde` key to make selectoplasm visible. You should see a row of buttons appear.
-
-You can use the following key bindings:
-
-- `e`: will activate the Elements Context Menu. This lets you quickly target an element and create a component (a CSS ruleset) for that element.
-- `c`: Toggles the Component Library window on and off.
-- `s`: Toggles the Stylesheet Library window on and off.
-- `g`: Toggles the Plugin Manager window on and off.
-
-### How Selectoplasm Works
-
-Very basically, selectoplasm uses plugins to generate stylesheets, which you then interact with using the Component Builder.
-
-The Component Builder has an input called the Combo Input, which allows you to type an emmet-inspired syntax to quickly add declarations and rulesets to your component.
-
-## License
-
-© 2025 Jim Bridger. All rights reserved.
-
-This software is provided with restricted rights and no formal open source license. The following terms apply:
-
-### Permitted
-- You may use the compiled application as a development dependency in your personal or commercial projects
-- The code and files you create using this tool belong to you
-
-### Prohibited
-- You may not include this software as a production dependency
-- You may not redistribute, copy, or share the source code
-- You may not modify the source code or create derivative works
-- You may not reverse engineer the compiled application
-- You may not sublicense, sell, or distribute the software in either source or compiled form
+- [selectoplasm.com](http://www.selectoplasm.com/)
+- [subreddit](https://www.reddit.com/r/selectoplasm/)
+- [Discord](https://discord.gg/y6tvcg3kkD)
